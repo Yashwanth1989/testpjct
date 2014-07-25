@@ -1,0 +1,16 @@
+
+@mixin hmixin($fontsize, $fontweight, $fontcolor){
+	
+	font-size:$fontsize;
+	font-weight:$fontweight;
+	color:$fontcolor;
+
+
+}
+
+h1, h2{
+	
+	@include hmixin(2em, bold, blue);
+
+	padding:5px;
+}
